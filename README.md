@@ -13,12 +13,9 @@ Simulated clinical trial data was generated for three different types for trials
 Synthetic data was generated using the R library Synthpop. Synthetic data is created by subsetting the original data to include only variables of interest, and then creating a cookbook of values.  Three methods of synthetic data generation were used, each corresponding to its own R script: CART (Categorical and Regression Tree modelling), random sampling, and linear/logistic regression. More information on how Synthpop generates synthetic data can be found here:
 https://www.synthpop.org.uk/about-synthpop.html#methodology
 
-The simulated and synthetic data are compared between data types and sample sizes by measuring the treatment effect using the chi-squared analysis.  The standard mean difference was also calulcated and graphed.
+The simulated and synthetic data are compared between data types and sample sizes by measuring the change in response rate.  The standard mean difference was also calulcated and graphed.
 
-Sim_Synth_Ustek.R contains the pipeline for synthetic data generated using the CART method.
-Sim_Synth_Ustek_Rand.R contains the pipeline for synthetic data generated using the random sampling method.
-Sim_Synth_Ustek_LL.R contains the pipeline for synthetic data generated using the linear/logisitc regression method.
-
+Three methods are used for data synthesis and compared as a secondary analysis: CART, linear/logistic regression, and random sampling.
 
 ## Installation
 
@@ -53,7 +50,8 @@ The R Libraries used include the following:
 - viridis
 - rgp
 - rsimsum
-
+- gridExtra
+- parallel
 
 
 ## Usage
